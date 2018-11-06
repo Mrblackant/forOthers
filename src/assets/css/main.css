@@ -3,91 +3,109 @@
 ******/
 
 /************今日油价***************/
-.text{
+.an_today_price {
+    background: rgba(221, 221, 221, 1);
+    border-radius: 20px;
+}
+
+.text {
     color: #444444
 }
-.proTxt{
+
+.proTxt {
     font-size: .875rem;
 }
-.priceTxt{
+
+.priceTxt {
     font-size: .75rem;
 }
 
-::-webkit-scrollbar{
-    display:none;
-    width:0;
+::-webkit-scrollbar {
+    display: none;
+    width: 0;
     height: 0;
 }
 
 /************爱车生活*************/
-.carBox{
-    height:12.5rem;
+.carBox {
+    height: 12.5rem;
 }
-.carIcon{
-    width:2.25rem;
-    height:2.25rem;
+
+.carIcon {
+    width: 2.25rem;
+    height: 2.25rem;
 }
 
 /************车主生活*************/
-.ownerBox{
+.an_meuns{
+    background:rgba(50,50,50,1);
+border-radius:50%;
+}
+.ownerBox {
     width: 100%;
     height: 11.25rem;
 }
-.ownerImg{
+
+.ownerImg {
     width: 3.12rem;
-    height:3.12rem
+    height: 3.12rem
 }
 
-.car_right{
-    background-color: rgba(62,42,240,0.05);
-    padding: 0 0.625rem;
+.car_right {
+    /*background-color: rgba(62, 42, 240, 0.05);*/
+    /*padding: 0 0.625rem;*/
 }
-@media screen and (min-width: 275px) and (max-width: 320px){
-    .ownerBox{
+
+@media screen and (min-width: 275px) and (max-width: 320px) {
+    .ownerBox {
         width: 100%;
         height: 9.25rem;
     }
-    .ownerImg{
+
+    .ownerImg {
         width: 2rem;
         height: 2.5rem
     }
-    .car_right{
+
+    .car_right {
         width: 48%;
         height: 5rem;
-        background-color: rgba(62,42,240,0.05);
+        background-color: rgba(62, 42, 240, 0.05);
         padding: 0 0.625rem;
     }
 }
 
 
 /************商家详情*************/
-.border-top{
+.border-top {
     border-top: 1px solid #EAEAEA
 }
-.border-bottom{
+
+.border-bottom {
     border-bottom: 1px solid #EAEAEA
 }
 
-.business-card{
+.business-card {
     padding: 1rem 1.5rem
 }
 
 /************使用抵用券*************/
-.voucher-box{
+.voucher-box {
     margin: 0 auto;
 }
 
 
 /************我的会员卡*************/
-.vip-card{
+.vip-card {
     padding: 1.3rem 1.2rem
 }
 
 
 /*我的订单*/
-.tabActive{
+.tabActive {
     border-bottom: 1px solid #FE8658;
 }
-.tabCenter{
+
+.tabCenter {
     margin: 0 auto
 }

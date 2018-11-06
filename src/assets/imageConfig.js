@@ -25,9 +25,15 @@ import Shihui_2 from './images/main/shihui_2.png';
 import Shihui_3 from './images/main/shihui_3.png';
 import Shihui_4 from './images/main/shihui_4.png';
 import Owner_01 from './images/main/owner_01.png';
-import Owner_02 from './images/main/owner_02.png';
-import Owner_04 from './images/main/owner_04.png';
-import Oil from './images/main/oil.png';
+import Main_title from './images/main/main_title.png';
+import Xsh_bottom from './images/main/xsh_bottom.png';
+
+// import Owner_02 from './images/main/owner_02.png';
+import Owner_02 from './images/main/jzsj.png';
+// import Owner_04 from './images/main/owner_04.png';
+import Owner_04 from './images/main/huichexian.png';
+// import Oil from './images/main/oil.png';
+import Oil from './images/main/antodatoil.png';
 import shareImg from './images/main/shareImg.jpg'
 
 //oil
@@ -63,6 +69,8 @@ const ImageConfig = {
     shihui_3: Shihui_3,
     shihui_4: Shihui_4,
     owner_01: Owner_01,
+    Main_title:Main_title,
+    Xsh_bottom:Xsh_bottom,
     owner_02: Owner_02,
     oil: Oil,
     WXLogo,

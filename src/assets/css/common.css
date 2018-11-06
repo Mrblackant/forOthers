@@ -182,7 +182,8 @@
 body {
     margin: auto;
     max-width: 640px;
-    background-color: #F7F7F7;
+    /*background-color: #F7F7F7;*/
+    background-color: #f2f2f2;
     color: #666;
     font-size: 0.65rem;
     overflow-x: hidden;
@@ -237,7 +238,9 @@ ol {
 }
 
 .bg {
-    background-color: #fff;
+    /*background-color: #fff;*/
+    background-color: #f2f2f2;
+
 }
 
 .app-color {
