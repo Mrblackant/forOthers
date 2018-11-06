@@ -1,0 +1,570 @@
+/*个人信息首页*/
+.personal-header {
+    padding: 1rem 0.6rem;
+}
+
+.am-list-item .am-list-line-multiple {
+    padding: 0.45rem 0.75rem 0.45rem 0;
+    box-sizing: border-box;
+}
+
+/*我的加油卡*/
+.fuel-card-bg {
+    background-image: url("../../assets/images/personal/fuel_card.png");
+    background-size: cover;
+}
+
+.fuel-card-cover {
+    padding: 1.2rem;
+}
+
+.fuel-card-btn {
+    border: 1px solid #FE7F4F !important;
+    color: #FE7F4F !important;
+    height: 2.2rem !important;
+    line-height: 2.2rem !important;
+}
+
+/*我的卡券*/
+.voucher-card-bg {
+    background-image: url("../../assets/images/personal/card_ voucher.png");
+    background-size: cover;
+}
+
+.voucher-card-bg-1 {
+    background-image: url("../../assets/images/personal/card_ voucher_1.png");
+    background-size: cover;
+}
+
+.voucher-card-bg-2 {
+    background-image: url("../../assets/images/personal/card_ voucher_2.png");
+    background-size: cover;
+}
+
+.voucher-card-cover-lf {
+    padding: 0.8rem 0 0.8rem 0.6rem;
+}
+
+.voucher-card-cover-rt {
+    padding: 0.8rem 0.6rem 0.8rem 0;
+}
+
+.voucher-card-cover-lf > div:first-child {
+    margin-bottom: 0.25rem;
+}
+
+.voucher-card-cover-use {
+    width: 2.25rem;
+    height: 1.1rem;
+    line-height: 1.1rem;
+    font-size: 0.5rem;
+    background-color: #FE7C4C;
+    border-radius: 0.9rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.voucher-card-cover-nowrap {
+    width: 8.5rem;
+}
+
+/*车辆信息编辑*/
+.car-edit-input {
+    height: 2.2rem;
+    line-height: 2.2rem;
+}
+
+.car-edit-add {
+    height: 4rem;
+    width: 4rem;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.car-edit-iconFont {
+    border: 1px solid #D8D8D8;
+    color: #D8D8D8;
+    width: 1.6rem;
+    height: 1.6rem;
+    line-height: 1.4rem;
+    font-size: 1.5rem;
+    border-radius: 0.8rem;
+}
+
+.car-list-delete {
+    color: #fff !important;
+    height: 2.2rem !important;
+    line-height: 2.2rem !important;
+}
+
+.car-list-show-delete {
+    background-color: #FEEFE9;
+}
+
+.car-edit-img-input {
+    height: 4rem;
+    width: 4rem;
+    background-color: transparent;
+    color: transparent;
+}
+
+/*个人信息编辑*/
+.info-edit-btn {
+    height: 2.2rem !important;
+    line-height: 2.2rem !important;
+}
+
+.info-edit-input .am-list-line .am-input-label,
+.info-edit-input .am-list-line .am-input-control input{
+    color: #444444;
+    font-size: 0.7rem;
+}
+
+.info-edit-input .am-list-line .am-input-clear {
+    width: 0.86rem;
+    height: 0.86rem;
+    background-size: 0.8rem auto;
+}
+
+/*修改支付密码*/
+.modify-pwd-title {
+    padding: 1.5rem 0;
+}
+
+
+/*轮播高度问题*/
+.Carousel .slider-frame {
+    height: 7rem !important;
+}
+
+
+@media screen and (min-width: 325px) and (max-width: 414px){
+    .voucher-card-cover-lf {
+        padding: 1.2rem 0 1.2rem 1rem;
+    }
+
+    .voucher-card-cover-rt {
+        padding: 1.2rem 1rem 1.2rem 0;
+    }
+}
+
+@media screen and (min-width: 414px){
+    .Carousel .slider-frame {
+        height: 8rem !important;
+    }
+
+    .voucher-card-cover-lf {
+        padding: 1.4rem 0 1.4rem 1.3rem;
+    }
+
+    .voucher-card-cover-rt {
+        padding: 1.4rem 1.3rem 1.4rem 0;
+    }
+
+    .voucher-card-cover-lf > div:first-child {
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+/********************我的积分**********************/
+/*当前积分*/
+.itemPadding{
+    padding: 0 .75rem;
+}
+
+.itemStyle{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+.currentPoint{
+    position:fixed;
+    top:0;
+    left:0
+}
+
+
+/**************反馈建议*****************/
+.container-feedback{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #f7f7f7;
+	flex-direction: column;
+	align-items: center;
+}
+
+.feedback-wrap{
+	width: 100%;
+	height: 13.85rem;
+	margin-top: 0.6rem;
+	padding: 0.8rem 0.6rem;
+    background: #fff;
+    position: relative;
+}
+
+.word-count{
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;
+
+}
+
+.word-count span{
+    color: #444;
+    
+}
+
+.feedback-con{
+	width: 100%;
+	height: 100%;
+	resize: none;
+	outline: none;
+	color: #6f7071;
+	font-size: 0.7rem;
+	line-height: 1.2rem;
+	padding: 0.6rem;
+}
+
+.feedback-btn{
+	margin-top: 2.2rem;
+	font-size: 0.8rem;
+	color: #fff;
+	height: 2rem;
+	line-height: 2rem;
+	width: 17.5rem;
+	text-align: center;
+}
+
+.container-addCard .am-button.am-button-disabled, .container-feedback .am-button.am-button-disabled{
+    background: #9c9c9c;
+    color: #fff;
+}
+
+/********************新增油卡**********************/
+.container-addCard{
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	height: auto;
+	background: #f7f7f7;
+	min-height: 100%;
+}
+.addCard-list{
+	width: 100%;
+	height: auto;
+	margin-top: 0.6rem;
+}
+.container-addCard .item-wrap{
+	width: 100%;
+}
+.container-addCard .item-wrap div:first-child{
+	width: 4.3rem;
+}
+.addCard-btn{
+	margin-top: 2.2rem;
+	width: 17.55rem;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	color: #fff;
+    font-size: 0.7rem;
+}
+.addCard-intr{
+	width: 100%;
+	height: auto;
+	padding: 0 0.6rem;
+	margin-top: 1.8rem;
+}
+.addCard-intr span{
+	display: block;
+	height: auto;
+	width: 100%;
+	color: #909090;
+	font-size: 0.6rem;
+	margin-bottom: 0.6rem;
+	line-height: 1.2rem;
+}
+.addCard-input{
+    height: 99%;
+    width: 16rem;
+}
+.addCard-list .item-wrap:last-child{
+    border: none;
+
+}
+
+/********************订单详情**********************/
+.details-list{
+    width: 100%;
+    height: auto;
+    padding: 0.6rem;
+    background: #fff;
+}
+.list-top{
+    height: 2rem;
+    align-items: center;
+
+}
+.list-top span{
+    flex: 1;
+    text-align: center;
+    color: #444;
+    font-size: 0.6rem;
+}
+.details-item{
+    align-items: center;
+
+}
+.details-item div{
+    flex: 1;
+    text-align: center;
+}
+
+/********************常见问答**********************/
+
+.container-faq .qa-list {
+	width: 100%;
+	height: auto;
+	background: #fff;
+	margin-top: 0.6rem;
+}
+.container-faq .qa-item {
+	width: 100%;
+	padding: 0.75rem;
+	height: auto;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	transition: all .3s;
+}
+.container-faq .qa-item:first-child {
+	border: none;
+}
+.container-faq .item-top {
+	height: 1.5rem;
+	width: 100%;
+}
+.container-faq .qa-item span {
+	color: #333845;
+	font-size: 0.7rem;
+	display: block;
+	float: left;
+	line-height: 1.5rem;
+}
+.container-faq .qa-item i {
+	display: block;
+	float: right;
+	width: 1rem;
+	height: 1.5rem;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA4ElEQVQ4T6WSsQrCMBiEE0qlvoMIvoezs+ArFOpZ6KrdipMiVAdLCQFnKfhOglOROro0jVKoINKahmZN7vsv9x8lHQ/tqCe1gDiOI0LIDsBVNaAWEIZh37KsiFK6VkEav8AYM6WUBynlxnXdW5OTvxkkSdLLsmyf53nged69DqIMsYJEpmkubdt+/EKUgFJQZbI1DGPlOM7zG9IKwDkfCCEmAE7aDirxGMBZO4NKPAVw1N4CY2xYFMUCgE8pfWkBOOcjIcQ8TVM/CAL5r41NVZ4BuKhqXN632oK2gzaTP2/eOnBZETwy7ccAAAAASUVORK5CYII=) center center no-repeat;
+	background-size: 100%;
+	transition: all .3s;
+}
+.container-faq .item-bot {
+	color: #909090;
+	font-size: 0.6rem;
+	line-height: 1rem;
+	height: auto;
+	max-height: 0;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding-left: 1rem;
+	transition: all .3s;
+}
+.container-faq .qa-item.open .item-bot {
+	height: auto;
+	margin-top: 0.4rem;
+	max-height: 10rem;
+}
+.container-faq .qa-item.open i {
+	transform: rotate(90deg);
+}
+
+/********************关于我们**********************/
+.about-text{
+    line-height: 1rem; 
+    font-size: 0.65rem; 
+    color: #A4A4A7; 
+    width: 15rem;
+    margin-top: 0.1rem;
+    text-indent: 1.3rem; 
+}
+
+/* 返还记录 */
+.container-record{
+    background: #f7f7f7;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+.record-header-wrap{
+    background: #f7f7f7;
+    padding: 0.6rem 0;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 999;
+    top: 0;
+}
+.record-header{
+    background: #fff;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 3rem;
+
+}
+.header-box{
+    height: 2.75rem;
+    min-width: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-box div{
+    color: #444;
+    font-size: 0.75rem;
+}
+.header-box div .sp1{
+    color: #FE8658;
+    font-size: 0.9rem;
+}
+.header-box div .sp2{
+    color: #ccc;
+    font-size: 0.7rem;
+}
+.record-item{
+    width: 100%;
+    height: 4.6rem;
+    background: #fff;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+.record-item .iconfont{
+    transition: all .3s;
+}
+.record-item.open .iconfont{
+    transform: rotate(180deg);
+}
+.record-item .item-top{
+    box-sizing: border-box;
+    display: flex; 
+    padding: 1.1rem 0.75rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);  
+    justify-content: space-between;
+    align-items: center;
+    height: 4.6rem;
+
+}
+.record-item:last-child .item-top{
+    border-bottom: none;
+}
+.record-item .item-top .sp1{
+    color: #444;
+    font-size: 0.8rem;
+}
+.record-item .item-top .sp2{
+    color: #4a4a4a;
+    font-size: 0.7rem;
+}
+
+
+.record-item .item-bot{
+    height: 2.25rem;
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    display: flex;
+}
+.record-item .item-bot span{
+    color: #909090;
+    font-size: 0.7rem;
+    display: block;
+    line-height: 2.25rem;
+}
+
+/*---------------------------预购--------------------------------*/
+.discount-btn {
+    height: 2rem !important;
+    line-height: 2rem !important;
+}
+
+.discount-contain {
+    padding: 0.25rem 0.75rem;
+}
+
+.discount-item {
+    height: 3rem;
+    line-height: 1.35rem;
+}
+
+
+/*---------------------------我的商家--------------------------------*/
+.container-nearby{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.container-nearby .BMap_stdMpCtrl.BMap_noprint.anchorBR.BMap_stdMpType4{
+    bottom: 3rem !important;
+    right: 1rem !important;
+}
+
+
+/*---------------------------我的订单--------------------------------*/
+.myOrder-cancel{
+    padding: 0.25rem 0.5rem;
+}
+.myOrder-border{
+    border: #FC9E7B 1px solid;
+    border-radius: 0.1rem
+}
+
+.purchaseBtn-shadow{
+    -webkit-box-shadow:0 -5px 10px  rgba(0,0,0,0.1);
+    -moz-box-shadow:0 -5px 10px  rgba(0,0,0,0.1);
+    box-shadow:0 -5px 10px rgba(0,0,0,0.1);
+}
+
+/*---------------------------会员卡详情--------------------------------*/
+.vipDetail-padding{
+    padding: 0.5rem 0.75rem;
+}
+
+/*---------------------------生活消费订单详情--------------------------------*/
+.liveOrder-border{
+    border: 1px solid #FB9873;
+    border-radius: 0.8rem;
+}
+
+/*---------------------我的代扣---------------------*/
+.withhold-cancel {
+    width: 3rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    text-align: center;
+    border-radius: 0.1rem;
+    border: 0.05rem solid rgba(242, 136, 70, 1);
+    color: rgba(242, 136, 70, 1);
+    font-size: 0.6rem;
+}
+
+/*---------------------账单类支付模态框样式---------------------*/
+.card-checked{
+    width: 40px;
+
+    height: 40px;
+
+    border-width: 20px;
+
+    border-style: solid;
+
+    border-color: yellow yellow transparent transparent;
+}

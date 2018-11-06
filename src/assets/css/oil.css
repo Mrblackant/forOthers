@@ -1,0 +1,57 @@
+/* 加油 */
+.container-oil{background: #F7F7F7;overflow: hidden;padding-bottom: 4rem;}
+.oil-titTab{height: 1.8rem;background: #fff;width: 100%;justify-content: space-between;align-items: center;padding: 0 3.5rem;}
+.oil-titTab div{width: 2.5rem;height: 100%;line-height: 1.8rem;font-size: 0.6rem;color: #606060;position: relative;text-align: center;transition: all .3s;}
+.oil-titTab div:after{content: '';position: absolute;background: #FE7C4C;left: 0;width: 100%;transition: all .3s;bottom: 0;height: 1px;transform: scale(0);}
+.oil-titTab div.ac{color: #FE7C4C;}
+.oil-titTab div.ac:after{transform: scale(1);}
+.recharge-tit{color: #aaa;font-size: 0.6rem;}
+.recharge-list{display: flex;height: auto;min-height: 7rem;flex-wrap: wrap;align-content: space-between;}
+.recharge-item{width: 5.4rem;height: 3rem;margin-top: 0.5rem; border: 1px solid #e9e9e9;border-radius: 2px;justify-content: center;align-items: center;transition: all .5s;color: #606060;font-size: 0.8rem;}
+
+.recharge-btn{width: 17.5rem;height: 2rem;margin: 1.6rem auto 0;color: #fff;line-height: 2rem;text-align: center;font-size: 0.7rem;}
+
+.recharge-item.ac{border: 1px solid #FE7C4C;color: #FE7C4C;}
+
+.recharge-details .details-list{height: auto;width: 100%;max-height: 14rem;overflow-y: scroll;}
+.modal-top{height: 2rem;width: 100%;position: relative;border-bottom: 1px solid #ccc;}
+.modal-top span{display: block;text-align: center;line-height: 2rem;color: #454545;font-size: 0.8rem;}
+.modal-top i{display: block;position: absolute;font-size: 0.8rem;top: 0;line-height: 2rem;height: 100%;}
+.details-top i{right: 1rem;}
+.list-top{height: 2rem;width: 100%;}
+.list-top span{flex: 1;line-height: 2rem;text-align: center;font-size: 0.7rem;color: #454545;}
+.details-item{height: 1.8rem;width: 100%;}
+.details-item span{flex: 1;text-align: center;line-height: 1.8rem;font-size: 0.6rem;color: #9c9c9c;}
+
+.oil-check-contain {
+    width: 0.75rem;
+    height: 0.75rem;
+    line-height: 0.75rem;
+    text-align: center;
+    background: #DDDDDD;
+    border-radius: 0.6rem;
+    margin-left: 0.2rem;
+    display: inline-block;
+}
+.oil-check-contain.active {
+    background: linear-gradient(to right, #FFB687, #FE7F4F);
+}
+
+/* 支付 */
+.paymentPwd-top i{left: 1rem;}
+
+.paymentPwd .input-wrap{width: 17.25rem;height: 2rem;position: relative;margin: 1.2rem auto;}
+.input-wrap input{width: 100%;height: 100%;border: none;opacity: 0;position: absolute;left: 0;top: 0;z-index: 999;}
+.pwdBorder-wrap{width: 100%;height: 100%;position: absolute;z-index: 1;}
+.pwdBorder{flex: 1;border: 1px solid #ccc;border-right: none;}
+.pwdBorder:last-child{border-right: 1px solid #ccc;}
+.pwdBlock-wrap{width: 100%;height: 100%;position: absolute;z-index: 100;align-items: center;}
+.pwdBlock{width: 1rem;height: 1rem;border-radius: 50%;background: rgba(0,0,0,0.8);margin-left: 1.85rem;}
+.pwdBlock:first-child{margin-left: 1rem;}
+
+.container-oil .am-list-content{padding-top: 0 !important;padding-bottom: 0 !important;}
+
+.container-oil .am-button.am-button-disabled{background: #9c9c9c;color: #fff;}
+.theWay img{width: 1.3rem;height: 1.3rem;}
+
+
