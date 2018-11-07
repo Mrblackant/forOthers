@@ -1,6 +1,6 @@
 /*新增的css*/
 .an_my_main{
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,6 +17,28 @@
 } 
 .an_my_header_img{
 
+}
+.an_title_first{
+    font-weight:bold;
+}
+.an_tip_wapper{
+    font-weight: bold;
+    display: inline-block;
+    font-size: 12px;
+    background-color: #1352E2;
+    border-radius: 10px;
+    color: #fff;
+    box-sizing: border-box;
+    padding:2px 10px;
+    text-align: center;
+}
+.an_top_meun{
+    color: #282828;
+}
+.an_only_line{
+  width: 100%;
+  height: 1px;
+  background-color: #282828; 
 }
 /*end*/
 /*个人信息首页*/

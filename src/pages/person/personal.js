@@ -381,7 +381,21 @@ class Classify extends Component {
                 router: '/myBusiness',
                 size: 26
             },
-        ]
+        ];
+        this.antopMeuns=[
+        {
+            meunTitle:'可用余额',
+            meunContent:'0.0'
+        },
+        {
+            meunTitle:'积分',
+            meunContent:'0.0'
+        },
+        {
+            meunTitle:'未返还',
+            meunContent:'0.0'
+        }
+        ];
     }
 
     // 页面跳转
@@ -393,7 +407,7 @@ class Classify extends Component {
 
     render(){
         return(
-            <div
+            {/*<div
                 className="bg flex flex-multi-line box-sizing"
                 style={{ width: width,height: '4.5rem',paddingBottom: '1rem'}}
             >
@@ -426,6 +440,33 @@ class Classify extends Component {
                         )
                     })
                 }
+            </div>*/},
+            <div 
+            style={{boxSizing:'border-box',paddingRight:width/16.3,paddingLeft:width/16.3}}
+            >
+            <div className="an_top_meun flex flex-space-between"
+            style={{width:'100%',height:width/3.9,boxSizing:'border-box',paddingRight:width/11,paddingLeft:width/11,paddingTop:width/18}}
+            >
+            {
+                this.antopMeuns.map((item,index)=>{
+                    return (
+                    <div className="flex flex-col flex-center " key={index}>
+                        <span 
+                        className="an_title_first"
+                        style={{fontSize:width/21.4}}
+                        >{item.meunTitle}</span>
+                        <p
+                        style={{fontSize:16,marginTop:width/27.7,fontWeight:'500'}}
+                        >{item.meunContent}
+                        <span style={{fontSize:12}}>通宝</span>
+                        </p>
+                    </div>
+                    )
+                })
+            }
+            </div>
+            <div className="an_only_line"></div>
+
             </div>
         )
     }
@@ -435,14 +476,20 @@ class Classify extends Component {
 class VerticalList extends Component {
     constructor(props) {
         super(props);
-
+        this.state = {index: 100};
         this.PowerList = [
-            { value: '我的加油卡', router: '/fuelCard', iconName: 'iconfont icon-wodejiayouqia', size: 18 },
-            { value: '我的车辆', router: '/carList', iconName: 'iconfont icon-wodecheliang', size: 12 },
-            { value: '我的地址', router: '/address', iconName: 'iconfont icon-wodedizhi', size: 20 },
-            { value: '关于油通宝', router: '/aboutUs', iconName: 'iconfont icon-guanyuyoufutong',size: 18 },
-            { value: '常见问答', router: '/faq', iconName: 'iconfont icon-changjianwenti1',size: 16 },
-            { value: '反馈建议', router: '/feedback', iconName: 'iconfont icon-fankuijianyi' ,size: 16},
+        
+            { value: '通宝充值', router: '/fuelCard', iconName: 'iconfont icon-wodejiayouqia',iconDertion:'iconfont icon-jiantouxia1', size: 18,moreTip:0 },
+            { value: '我的订单', router: '/myOrder', iconName: 'iconfont icon-dingdan', iconDertion:'iconfont icon-youjiantou', size: 18 ,moreTip:0},
+            { value: '我的会员卡', router: '/vipCard', iconName: 'iconfont icon-huiyuanqia1', iconDertion:'iconfont icon-youjiantou', size: 18 ,moreTip:0},
+            { value: '我的奖励', router: '/reward', iconName: 'iconfont icon-jiangli', iconDertion:'iconfont icon-youjiantou', size: 18 ,moreTip:0},
+            { value: '我的商家', router: '/myBusiness', iconName: 'iconfont icon-Group', iconDertion:'iconfont icon-youjiantou', size: 18 ,moreTip:0},
+            { value: '我的加油卡', router: '/fuelCard', iconName: 'iconfont icon-wodejiayouqia', iconDertion:'iconfont icon-youjiantou', size: 18 ,moreTip:0},
+            { value: '我的车辆', router: '/carList', iconName: 'iconfont icon-wodecheliang', iconDertion:'iconfont icon-youjiantou', size: 12 ,moreTip:0},
+            { value: '我的地址', router: '/address', iconName: 'iconfont icon-wodedizhi', iconDertion:'iconfont icon-youjiantou', size: 20 ,moreTip:0},
+            { value: '反馈建议', router: '/feedback', iconName: 'iconfont icon-fankuijianyi' ,iconDertion:'iconfont icon-youjiantou', size: 16,moreTip:2},
+            { value: '常见问答', router: '/faq', iconName: 'iconfont icon-changjianwenti1',iconDertion:'iconfont icon-youjiantou', size: 16 ,moreTip:0},
+            { value: '关于油通宝', router: '/aboutUs', iconName: 'iconfont icon-guanyuyoufutong',iconDertion:'iconfont icon-youjiantou', size: 18 ,moreTip:0},
         ];
     }
 
@@ -452,7 +499,10 @@ class VerticalList extends Component {
             this.props.history.push(router)
         }
     }
-
+    // 箭头的icon
+    changeIcon(index) {
+        this.setState({ index: index});
+    }
     render(){
         return(
             <div
@@ -461,6 +511,14 @@ class VerticalList extends Component {
             >
                 {
                     this.PowerList.map((item, index) => {
+                        let MoreTip
+                        if (parseInt(item.moreTip)>0) {
+                        MoreTip=(
+                            <span 
+                            style={{marginLeft:width/22.7}}
+                            className="an_tip_wapper">{item.moreTip}</span>
+                            )
+                        }
                         return (
                             <div
                                 key={index}
@@ -468,24 +526,29 @@ class VerticalList extends Component {
                             >
                                 <div
                                     className="flex flex-dir flex-center flex-space-between"
-                                    style={{padding:12}}
+                                    style={{padding:10}}
+                                    onClick={() => this.changeIcon(index)}
+
                                 >
                                     <div className="flex flex-align-items flex-dir">
 
                                         <div
                                             className={item.iconName}
-                                            style={{ width: '1.5rem', fontSize: item.size, color: '#FF925A' }}
+                                            style={{ width: '1.5rem', fontSize: item.size, color: '#282828' }}
                                         />
 
-                                        <div style={{ fontSize: 14, color: '#444' }}>{item.value}</div>
+                                        <div style={{ fontSize: 13, color: '#282828',fontWeight:'bold' }}>{item.value}
+                                            {MoreTip}
+                                        </div>
                                     </div>
 
-                                    <div className="iconfont icon-youjiantou" style={{ fontSize: 14, color: '#979797' }}/>
+                                    <div  className={index===this.state.index ? 'iconfont icon-jiantouxia1' : 'iconfont icon-youjiantou'}
+                                    style={{ fontSize:index===this.state.index ? 20 : 14, color: '#979797' }}/>
 
                                 </div>
 
                                 {/*分割线*/}
-                                <div style={{height:1,width:'100%',backgroundColor:'rgba(0,0,0,0.1)'}}/>
+                                {/*<div style={{height:1,width:'100%',backgroundColor:'rgba(0,0,0,0.1)'}}/>*/}
 
                             </div>
 
