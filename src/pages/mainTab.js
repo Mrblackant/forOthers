@@ -12,15 +12,17 @@ import Main from './main';
 import Discount from './oil/discount';
 import Business from './business/business';
 import Personal from './person/personal';
-
+const width = window.screen.width > 640 ? 640 : window.screen.width;
+ 
 class MainTab extends Component {
     render() {
-        let activeStyle= {color: '#FE7F4F'};
+        let activeStyle= {color: '#000000'};
 
         return (
             <div>
                 {/*底部样式*/}
                 <div
+                    style={{height:width/7.7}}
                     className="foot-bar flex flex-center flex-dir"
                 >
                     <NavLink
@@ -49,7 +51,19 @@ class MainTab extends Component {
 
                         <span>优惠</span>
                     </NavLink>
+                     <NavLink
+                        className="foot-bar-item"
+                        replace
+                        activeStyle={activeStyle}
+                        to="/main/business"
+                    >
+                        <div
+                            className=" flex flex-center iconfont icon-jifenshangcheng1 foot-bar-icon an_center_icon"
+                            style={{fontSize:28,width:width/7.5,height:width/7.5,margin:' 0 auto',marginTop:-width/18}}
+                        />
 
+                        <span>加油卡</span>
+                    </NavLink>
                     <NavLink
                         className="foot-bar-item"
                         replace
