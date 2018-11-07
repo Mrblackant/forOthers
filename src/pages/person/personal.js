@@ -290,13 +290,42 @@ export default class Personal extends Component {
                         </div>
 
                         :
-                        <div
-                            className="bg personal-header flex flex-align-items"
-                            style={{ height: 116, marginBottom: 8 }}
-                        >
-                            <div>
-                                <div style={{ fontSize: 24, color: '#444', marginBottom: 10 }}>登录、注册</div>
-                                <div style={{ fontSize: 14, color: '#444' }}>登录领取你的油通宝积分福利</div>
+                        // <div
+                        //     className="bg personal-header flex flex-align-items"
+                        //     style={{ height: 116, marginBottom: 8 }}
+                        // >
+                        //     <div>
+                        //         <div style={{ fontSize: 24, color: '#444', marginBottom: 10 }}>登录、注册</div>
+                        //         <div style={{ fontSize: 14, color: '#444' }}>登录领取你的油通宝积分福利</div>
+                        //     </div>
+                        // </div>
+                        <div 
+                        style={{width:width,height:width/1.7,paddingTop:width/27,paddingLeft:width/15.9,paddingRight:width/15.9}}
+                        className="an_my_main flex flex-space-between ">
+                        {/*邀请码*/}
+                            <div className="an_my_invite an_my_header"
+                            >
+                            <i style={{fontSize:width/17.8,marginRight:5}}
+                            className="iconfont icon-wodejiayouqia"
+                            ></i>
+                            <span
+                            style={{fontSize:12}}
+                            >邀请码</span>
+                            </div>
+                        {/*昵称头像*/}
+                            <div className="an_my_info an_my_header flex flex-col flex-center">
+                                <div 
+                                style={{width:width/4.4,height:width/4.4,borderRadius:'50%',backgroundColor:'#fff',marginBottom:width/50}}
+                                className="an_my_header_img"></div>
+                                <span 
+                                style={{fontSize: 12 ,fontWeight: 'bold'}}
+                                >你的名字</span>
+                            </div>
+                        {/*消息*/}
+                            <div className="an_my_message an_my_header">
+                             <i style={{fontSize:width/17.8}}
+                            className="iconfont icon-wodejiayouqia"
+                            ></i>
                             </div>
                         </div>
                 }
@@ -366,7 +395,7 @@ class Classify extends Component {
         return(
             <div
                 className="bg flex flex-multi-line box-sizing"
-                style={{ width: width,height: '4.5rem',marginTop:'-0.5rem',paddingBottom: '1rem'}}
+                style={{ width: width,height: '4.5rem',paddingBottom: '1rem'}}
             >
                 {
                     this.classifyList.map((item, i) => {

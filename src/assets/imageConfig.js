@@ -17,6 +17,7 @@ import Card_icon_2 from './images/personal/card-icon2.png';
 import personalBg from './images/personal/personalBg.png';
 import marker from './images/personal/marker.png';
 import marker2 from './images/personal/marker2.png';
+import myback from './images/personal/myback.png';
 
 //main
 import Banner from './images/main/banner.jpg';
@@ -89,6 +90,7 @@ const ImageConfig = {
     noMorePic,
     tb,
     marker2,
+    myback,
     shareImg
 };
 

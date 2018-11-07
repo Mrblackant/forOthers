@@ -583,7 +583,7 @@ a:active {
 }
 .an_center_icon{
     border-radius:50%;
-    position: relative;
+    /*position: relative;*/
     background:rgba(255,255,255,1)
 }
 .foot-bar-item {

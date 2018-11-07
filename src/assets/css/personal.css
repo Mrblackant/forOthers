@@ -1,3 +1,24 @@
+/*新增的css*/
+.an_my_main{
+    border: 1px solid red;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center;
+    background-image: url(../../assets/images/personal/myback.png);
+}
+.an_my_main .an_my_header{
+    height: 100%;
+    /*border: 1px solid #FFF;*/
+    color: #fff;
+}
+.an_my_main .an_my_info{
+    text-align: center;
+} 
+.an_my_header_img{
+
+}
+/*end*/
 /*个人信息首页*/
 .personal-header {
     padding: 1rem 0.6rem;
