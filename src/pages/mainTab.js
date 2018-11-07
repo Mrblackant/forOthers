@@ -12,6 +12,7 @@ import Main from './main';
 import Discount from './oil/discount';
 import Business from './business/business';
 import Personal from './person/personal';
+import Recharge from './person/recharge';//在线充值
 const width = window.screen.width > 640 ? 640 : window.screen.width;
  
 class MainTab extends Component {
@@ -55,7 +56,7 @@ class MainTab extends Component {
                         className="foot-bar-item"
                         replace
                         activeStyle={activeStyle}
-                        to="/main/business"
+                        to="/main/recharge"
                     >
                         <div
                             className=" flex flex-center iconfont icon-jifenshangcheng1 foot-bar-icon an_center_icon"
@@ -95,6 +96,7 @@ class MainTab extends Component {
                 <div>
                     <Route exact path="/" component={Main}/>
                     <Route path="/main/discount" component={Discount}/>
+                    <Route path="/main/recharge" component={Recharge}/>
                     <Route path="/main/business" component={Business}/>
                     <Route path="/main/personal" component={Personal}/>
                 </div>

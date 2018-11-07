@@ -1,0 +1,35 @@
+/*******
+***在线充值
+******/
+.an_recharge_wapper{
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid red;
+}
+.an_recharge_img{
+    border-radius: 50%;
+    background-color: #0099E5;
+}
+.an_recharge_name{
+font-weight:400;
+color:rgba(53,53,53,1);
+margin: 0;
+margin: 3px 0 3px;
+
+}
+.an_recharge_ye{
+    color: #0099E5;
+    font-size: 14px;
+}.an_recharge_chose{
+    background-color: #fff;
+}
+.an_recharge_href{
+    text-align: center;
+
+}
+.an_recharge_href a{
+    color: #0099E5;
+    font-size: 14px;
+    margin-right: 15px;
+    text-decoration: underline;
+}
