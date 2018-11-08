@@ -509,7 +509,9 @@ a:active {
 .linear-gradientV {
     background: linear-gradient(to bottom, #FFB687, #FE8657);
 }
-
+.an_footer_img{
+    margin-bottom: 3px;
+}
 .padding-horizontal {
     padding-left: 0.6rem;
     padding-right: 0.6rem;

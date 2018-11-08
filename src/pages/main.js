@@ -296,15 +296,14 @@ class CarsLife extends Component {
     constructor(props) {
         super(props);
         this.lists = [
-            { iconName: 'icon-baoyang1', describe: '汽车保养', route: 'http://c.hzhus.com/index/index/index.html' },
-            { iconName: 'icon-luntai', describe: '预约换胎', route: 'http://h5.sino-ap.com/TWebUIzj/selectcity.aspx?za=20180612071106&zb=5&zc=index&zd=&ze=40953f5&zf=0571&sign=ae9f1eca68dba204f373949cb4abfffa' },
-            { iconName: 'icon-xiche', describe: '8折洗车', route: 'https://open.chediandian.com' },
-            { iconName: 'icon-jiuyuan1', describe: '极速救援', route: 'https://open.chediandian.com' },
-
-            { iconName: 'icon-zhekou', describe: '洗车兑换', route: 'https://open.chediandian.com/service/petrochemical?shcode=100203&ApiKey=14a29bdea11f4972a6d517706496c935&ApiST=1504678289&ApiSign=050ad4f9dd869273febc01ecec5de70c&openid=otACft7aeZjtVZCxr9euHOdltq6Y&_=20180612152015' },
-            { iconName: 'icon-fuwu1', describe: '自助洗车', route: 'http://wapnew.njyzz.com/index.php/index/index.html' },
-            { iconName: 'icon-weizhang1', describe: '违章查询', route: 'https://open.chediandian.com/TrafficViolation/Index?ApiKey=0793dfb074874203ac5afecd93f476c6&ApiST=1495425763&ApiSign=36e732a5eb62b65183aea1e217edd7c7' },
-            { iconName: 'icon-maiche1', describe: '新车买卖', route: 'http://a2.rabbitpre.com/m2/aUe1ZicgvI' },
+            { imgSrc: ImageConfig.baoyang1 , describe: '汽车保养', route: 'http://c.hzhus.com/index/index/index.html' },
+            { imgSrc: ImageConfig.huantai , describe: '预约换胎', route: 'http://h5.sino-ap.com/TWebUIzj/selectcity.aspx?za=20180612071106&zb=5&zc=index&zd=&ze=40953f5&zf=0571&sign=ae9f1eca68dba204f373949cb4abfffa' },
+            { imgSrc: ImageConfig.bzxc , describe: '8折洗车', route: 'https://open.chediandian.com' },
+            { imgSrc: ImageConfig.jjjy , describe: '极速救援', route: 'https://open.chediandian.com' },
+            { imgSrc: ImageConfig.xcdh , describe: '洗车兑换', route: 'https://open.chediandian.com/service/petrochemical?shcode=100203&ApiKey=14a29bdea11f4972a6d517706496c935&ApiST=1504678289&ApiSign=050ad4f9dd869273febc01ecec5de70c&openid=otACft7aeZjtVZCxr9euHOdltq6Y&_=20180612152015' },
+            { imgSrc: ImageConfig.zdxc , describe: '自助洗车', route: 'http://wapnew.njyzz.com/index.php/index/index.html' },
+            { imgSrc: ImageConfig.wgcx , describe: '违章查询', route: 'https://open.chediandian.com/TrafficViolation/Index?ApiKey=0793dfb074874203ac5afecd93f476c6&ApiST=1495425763&ApiSign=36e732a5eb62b65183aea1e217edd7c7' },
+            { imgSrc: ImageConfig.xcmm , describe: '新车买卖', route: 'http://a2.rabbitpre.com/m2/aUe1ZicgvI' },
         ]
     }
 
@@ -348,7 +347,13 @@ class CarsLife extends Component {
                                         }}
                                         className="flex flex-center an_meuns"
                                     >
-                                        <div className={className} style={{ fontSize: i === 4 || i === 6 || i === 7 ? 20 : 25, color: '#fff' }} />
+                                    
+                                     <img
+                            style={{ width:'100%'}}
+                            src={item.imgSrc}
+                            alt=""
+                        />
+                                        {/*<div className={className} style={{ fontSize: i === 4 || i === 6 || i === 7 ? 20 : 25, color: '#fff' }} />*/}
                                     </div>
                                     <span style={{ fontSize: 12, color: '#444444', paddingTop: 10 }}>
                                         {item.describe}

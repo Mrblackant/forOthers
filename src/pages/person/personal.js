@@ -306,8 +306,9 @@ export default class Personal extends Component {
                             <div className="an_my_invite an_my_header"
                             >
                             <i style={{fontSize:width/17.8,marginRight:5}}
-                            className="iconfont icon-wodejiayouqia"
+                            className="iconfont icon-xiaofeima"
                             ></i>
+                            
                             <span
                             style={{fontSize:12}}
                             >邀请码</span>
@@ -479,17 +480,17 @@ class VerticalList extends Component {
         this.state = {index: 100};
         this.PowerList = [
         
-            { value: '通宝充值', router: '/fuelCard', iconName: 'iconfont icon-wodejiayouqia',iconDertion:'iconfont icon-jiantouxia1', size: 18,moreTip:0 },
-            { value: '我的订单', router: '/myOrder', iconName: 'iconfont icon-dingdan', iconDertion:'iconfont icon-youjiantou', size: 18 ,moreTip:0},
-            { value: '我的会员卡', router: '/vipCard', iconName: 'iconfont icon-huiyuanqia1', iconDertion:'iconfont icon-youjiantou', size: 18 ,moreTip:0},
-            { value: '我的奖励', router: '/reward', iconName: 'iconfont icon-jiangli', iconDertion:'iconfont icon-youjiantou', size: 18 ,moreTip:0},
-            { value: '我的商家', router: '/myBusiness', iconName: 'iconfont icon-Group', iconDertion:'iconfont icon-youjiantou', size: 18 ,moreTip:0},
-            { value: '我的加油卡', router: '/fuelCard', iconName: 'iconfont icon-wodejiayouqia', iconDertion:'iconfont icon-youjiantou', size: 18 ,moreTip:0},
-            { value: '我的车辆', router: '/carList', iconName: 'iconfont icon-wodecheliang', iconDertion:'iconfont icon-youjiantou', size: 12 ,moreTip:0},
-            { value: '我的地址', router: '/address', iconName: 'iconfont icon-wodedizhi', iconDertion:'iconfont icon-youjiantou', size: 20 ,moreTip:0},
-            { value: '反馈建议', router: '/feedback', iconName: 'iconfont icon-fankuijianyi' ,iconDertion:'iconfont icon-youjiantou', size: 16,moreTip:2},
-            { value: '常见问答', router: '/faq', iconName: 'iconfont icon-changjianwenti1',iconDertion:'iconfont icon-youjiantou', size: 16 ,moreTip:0},
-            { value: '关于油通宝', router: '/aboutUs', iconName: 'iconfont icon-guanyuyoufutong',iconDertion:'iconfont icon-youjiantou', size: 18 ,moreTip:0},
+            { imgSrc: ImageConfig.an_tbcz,value: '通宝充值', router: '/fuelCard', iconName: 'iconfont icon-wodejiayouqia',iconDertion:'iconfont icon-jiantouxia1', size: 18,moreTip:0 },
+            { imgSrc: ImageConfig.an_wddd,value: '我的订单', router: '/myOrder', iconName: 'iconfont icon-dingdan', iconDertion:'iconfont icon-youjiantou', size: 18 ,moreTip:0},
+            { imgSrc: ImageConfig.an_wdhyk,value: '我的会员卡', router: '/vipCard', iconName: 'iconfont icon-huiyuanqia1', iconDertion:'iconfont icon-youjiantou', size: 18 ,moreTip:0},
+            { imgSrc: ImageConfig.an_wdjl,value: '我的奖励', router: '/reward', iconName: 'iconfont icon-jiangli', iconDertion:'iconfont icon-youjiantou', size: 18 ,moreTip:0},
+            { imgSrc: ImageConfig.an_wdsj,value: '我的商家', router: '/myBusiness', iconName: 'iconfont icon-Group', iconDertion:'iconfont icon-youjiantou', size: 18 ,moreTip:0},
+            { imgSrc: ImageConfig.an_wdjyk,value: '我的加油卡', router: '/fuelCard', iconName: 'iconfont icon-wodejiayouqia', iconDertion:'iconfont icon-youjiantou', size: 18 ,moreTip:0},
+            { imgSrc: ImageConfig.an_wdcl,value: '我的车辆', router: '/carList', iconName: 'iconfont icon-wodecheliang', iconDertion:'iconfont icon-youjiantou', size: 12 ,moreTip:0},
+            { imgSrc: ImageConfig.an_wddz,value: '我的地址', router: '/address', iconName: 'iconfont icon-wodedizhi', iconDertion:'iconfont icon-youjiantou', size: 20 ,moreTip:0},
+            { imgSrc: ImageConfig.an_fkjy,value: '反馈建议', router: '/feedback', iconName: 'iconfont icon-fankuijianyi' ,iconDertion:'iconfont icon-youjiantou', size: 16,moreTip:2},
+            { imgSrc: ImageConfig.an_cjwd,value: '常见问答', router: '/faq', iconName: 'iconfont icon-changjianwenti1',iconDertion:'iconfont icon-youjiantou', size: 16 ,moreTip:0},
+            { imgSrc: ImageConfig.an_gyytb,value: '关于油通宝', router: '/aboutUs', iconName: 'iconfont icon-guanyuyoufutong',iconDertion:'iconfont icon-youjiantou', size: 18 ,moreTip:0},
         ];
     }
 
@@ -532,10 +533,11 @@ class VerticalList extends Component {
                                 >
                                     <div className="flex flex-align-items flex-dir">
 
-                                        <div
-                                            className={item.iconName}
-                                            style={{ width: '1.5rem', fontSize: item.size, color: '#282828' }}
-                                        />
+                                         <img
+                                        style={{ width:'1rem',marginRight:'5px'}}
+                                        src={item.imgSrc}
+                                        alt=""
+                                    />
 
                                         <div style={{ fontSize: 13, color: '#282828',fontWeight:'bold' }}>{item.value}
                                             {MoreTip}
