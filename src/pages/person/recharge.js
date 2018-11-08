@@ -5,18 +5,37 @@ import React, { Component } from 'react';
 // import "antd/dist/antd.css";
 import '../../assets/css/common.css';
 import '../../assets/css/recharge.css';
-import { Button,Radio} from 'antd-mobile';
-// import { Button,Radio} from 'antd';
-
+import { Button, Radio } from 'antd-mobile';
 const width = window.screen.width > 640 ? 640 : window.screen.width;
 export default class Recharge extends Component {
-    componentWillMount(){
+    constructor(props) {
+        super(props);
+        this.state = {
+            selectedPrice: null
+        };
+        this.pricelist = [{
+            num: '50元'
+        }, {
+            num: '100元'
+        }, {
+            num: '200元'
+        }, {
+            num: '1000元'
+        }];
+    }
+    chosePrice(index) {
+        console.log(index)
+        this.setState({
+            selectedPrice: index
+        })
+    }
+    componentWillMount() {
         document.title = '油通宝';
         document.body.scrollIntoView();
     }
 
-    render(){
-        return(
+    render() {
+        return (
             <div>
             <div style={{height:width/5.7,paddingLeft:width/24,paddingRight:width/24}}
                 className="an_recharge_wapper flex flex-space-between  flex-align-items"
@@ -54,16 +73,21 @@ export default class Recharge extends Component {
             充值金额
         </p>
         <div
-        className="an_recharge_chose flex "
+        className="an_recharge_chose flex flex-align-items"
         style={{height:width/6.2,paddingLeft:width/24,paddingRight:width/24}}
         >
-      {/*  <Radio>Radio</Radio>
-            <Radio.Group defaultValue="a" buttonStyle="solid">
-    <Radio.Button value="a">Hangzhou</Radio.Button>
-    <Radio.Button value="b">Shanghai</Radio.Button>
-    <Radio.Button value="c">Beijing</Radio.Button>
-    <Radio.Button value="d">Chengdu</Radio.Button>
-  </Radio.Group>*/}
+        {this.pricelist.map((item,index)=>{
+            return (
+                    <span 
+                    onClick = {() => {
+                        this.chosePrice(index)
+                                }}
+                    style={{ backgroundColor:index===this.state.selectedPrice ? '#0099E5' : '#DBDBDB',marginLeft:index>0 ? width/25 : 0,width:width/5,height:width/12.5}}
+                    className="an_for_price flex flex-center">
+                    <span>{item.num}</span>
+                    </span>
+                )
+        })}
         </div>
         <Button type="primary" block="true"
 style={{borderRadius:44,marginTop:width/25.8}}
