@@ -6,8 +6,11 @@ $commomBorder_color:#D8DCE6; //统一的边框颜色，浅灰色
 $commonFs_color:#85888E; //字体的颜色，灰色
 $commonFs_black_color:#303133; //字体的颜色，黑色
 $commonFs_red_color:#F56C6C; //字体颜色 微红
-$commonFs_blue_color:#2196F3;//字体颜色 蓝色
-// elementUi的调整
+$commonFs_blue_color:#2196F3; //字体颜色 蓝色
+$common_dia_border_color:#E4E7ED; //dialog弹窗的边框色 灰色
+$common_dia_title_color:#1E88E5; //dialog弹窗的标题行颜色 蓝色
+
+// ------------------elementUi的调整------------------
 .el-form-item__content div:first-child {
   //form表单选项的宽度
   width: 220px;
@@ -34,9 +37,17 @@ $commonFs_blue_color:#2196F3;//字体颜色 蓝色
 
 // 统一写的table(带表单功能)
 .common_table_set {
-  .el-input__inner {
-    // width: 60px!important;
-    height: 22px !important;
+  .el-input {
+    .el-input__inner {
+      // width: 60px!important;
+      height: 22px !important;
+    }
+  }
+
+  .el-select {
+    .el-input__inner {
+      height: auto !important;
+    }
   }
 }
 
@@ -56,6 +67,7 @@ $commonFs_blue_color:#2196F3;//字体颜色 蓝色
     line-height: 18px !important;
   }
 
+  thead th,
   thead.is-group th {
     background: none !important;
     background: $commonTable_header_color !important;
@@ -83,7 +95,29 @@ $commonFs_blue_color:#2196F3;//字体颜色 蓝色
   }
 }
 
-// elementUi的调整 end
+// elementUI弹窗的样式
+.el-dialog__wrapper {
+  .el-dialog {
+    border-radius: 10px;
+  }
+.el-dialog__body{
+  padding: 24px 20px;
+}
+  .el-dialog__header {
+    * {
+      color: $common_dia_title_color !important;
+    }
+    .el-dialog__headerbtn{
+      top: 14px;
+    }
+    padding: 12px 20px 8px;
+    font-size: 16px;
+    font-weight:bold;
+    border-bottom: 2px solid $common_dia_border_color;
+  }
+}
+
+//------------------ elementUi的调整 end------------------
 
 // ------------------资费页面的公用css------------------
 
@@ -102,10 +136,19 @@ $commonFs_blue_color:#2196F3;//字体颜色 蓝色
   font-size: 12px;
   color: $commonFs_color;
 }
+
 // table列表里可点击的链接样式
-.lx_table_can_click{
-color: $commonFs_blue_color;
-text-decoration: underline;
-cursor: pointer;
+.lx_table_can_click {
+  color: $commonFs_blue_color;
+  text-decoration: underline;
+  cursor: pointer;
 }
+
+// table列表里的小mini按钮
+.lx_table_inner_mini_btn {
+  // width: 40px;
+  // height: 20px;
+  padding: 4px 7px;
+}
+
 // ------------------资费页面的公用css end------------------

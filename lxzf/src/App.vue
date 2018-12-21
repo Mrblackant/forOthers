@@ -28,6 +28,15 @@ export default {
       }, {
         link: 'feesApplyApproval',
         name: '留学资费标准调整-审批'
+      }, {
+        link: 'projectMaintenance',
+        name: '留学项目维护'
+      }, {
+        link: 'feesList',
+        name: '留学项目维护-费用清单'
+      }, {
+        link: 'feesList?type=onlySee',
+        name: '留学项目维护-费用清单-查看'
       }]
     }
   },

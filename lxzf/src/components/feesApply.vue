@@ -90,12 +90,12 @@
           <template v-if="showWhichTable.length>0">
             <template v-for="(item,index) in showWhichTable">
               <!-- 项目名称那一列需要自己去加链跳转 -->
-              <el-table-column v-if="item.label==='项目名称'" :prop="item.prop" :label="item.label" :key="index">
+              <el-table-column v-if="item.label==='项目名称'" :prop="item.prop" :label="item.label" :key="item.label">
                 <template slot-scope="scope">
                   <span class="lx_table_can_click" @click="tableCanJump(scope)">{{scope.row.address}}</span>
                 </template>
               </el-table-column>
-              <el-table-column v-else :prop="item.prop" :label="item.label" :key="index">
+              <el-table-column v-else :prop="item.prop" :label="item.label" :key="item.label">
               </el-table-column>
             </template>
           </template>
