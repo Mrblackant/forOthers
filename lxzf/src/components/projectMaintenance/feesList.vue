@@ -147,6 +147,11 @@ export default {
     deleteRow() { //table内的删除
 
     }
+  },
+  watch: {
+    $route() {
+      this.seeOrEdit()
+    }
   }
 }
 
