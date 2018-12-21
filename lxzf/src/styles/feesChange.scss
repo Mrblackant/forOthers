@@ -6,7 +6,7 @@ $commomBorder_color:#D8DCE6; //统一的边框颜色，浅灰色
 $commonFs_color:#85888E; //字体的颜色，灰色
 $commonFs_black_color:#303133; //字体的颜色，黑色
 $commonFs_red_color:#F56C6C; //字体颜色 微红
-
+$commonFs_blue_color:#2196F3;//字体颜色 蓝色
 // elementUi的调整
 .el-form-item__content div:first-child {
   //form表单选项的宽度
@@ -102,5 +102,10 @@ $commonFs_red_color:#F56C6C; //字体颜色 微红
   font-size: 12px;
   color: $commonFs_color;
 }
-
+// table列表里可点击的链接样式
+.lx_table_can_click{
+color: $commonFs_blue_color;
+text-decoration: underline;
+cursor: pointer;
+}
 // ------------------资费页面的公用css end------------------

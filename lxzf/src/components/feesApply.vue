@@ -88,8 +88,16 @@
           <el-table-column type="index" label="序号" width="100" align="center">
           </el-table-column>
           <template v-if="showWhichTable.length>0">
-            <el-table-column v-for="(item,index) in showWhichTable" :prop="item.prop" :label="item.label" :key="index">
-            </el-table-column>
+            <template v-for="(item,index) in showWhichTable">
+              <!-- 项目名称那一列需要自己去加链跳转 -->
+              <el-table-column v-if="item.label==='项目名称'" :prop="item.prop" :label="item.label" :key="index">
+                <template slot-scope="scope">
+                  <span class="lx_table_can_click" @click="tableCanJump(scope)">{{scope.row.address}}</span>
+                </template>
+              </el-table-column>
+              <el-table-column v-else :prop="item.prop" :label="item.label" :key="index">
+              </el-table-column>
+            </template>
           </template>
           <!--  <el-table-column prop="name" label="项目名称" width="180">
                     </el-table-column>
@@ -207,6 +215,9 @@ export default {
     },
     showTable() { //根据是否资费、历史资费调整 ，决定table的渲染
       this.showWhichTable = this.ifHistory ? this.historyFeesTable : this.lxFeesTable
+    },
+    tableCanJump(data) { //table里的链接跳转
+      console.log(data)
     }
   },
   watch: {

@@ -8,7 +8,7 @@
           <el-col :span="6">状态:{{}}</el-col>
           <el-col :span="6">创建人:{{}}</el-col>
           <el-col :span="6">创建时间:{{}}</el-col>
-          <el-col :span="6">
+          <el-col :span="6" align="right">
             <el-button type="primary" plain size="mini">审批进度</el-button>
             <el-button type="primary" plain size="mini">审批意见</el-button>
           </el-col>
@@ -212,7 +212,7 @@ export default {
 
   .lx_top_title {
     box-sizing: border-box;
-    padding-left: 30px;
+    padding:0 30px;
     margin-bottom: 20px;
   }
 
