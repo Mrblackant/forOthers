@@ -1,0 +1,99 @@
+// 资费调整的新的 改版的css，字体、表单等,基本上修改的都是elementui自带的样式
+$commonTable_header_color:#daf5fa; //统一的table的标题行的背景颜色,淡蓝色
+$commonTable_row_color:#f7fcff; //统一的table row的背景颜色,浅蓝色
+$commonFont_weight:400; //统一的字体加粗
+$commomBorder_color:#D8DCE6; //统一的边框颜色，浅灰色
+$commonFs_color:#85888E; //字体的颜色，灰色
+$commonFs_black_color:#303133; //字体的颜色，黑色
+$commonFs_red_color:#F56C6C; //字体颜色 微红
+
+
+@mixin lx_new_common_font_size {
+  //统一的字体样式调整
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: $commonFs_black_color !important;
+}
+
+.el-form-item__content div:first-child{
+  //form表单选项的宽度
+  width: 220px;
+
+}
+
+.el-form {
+  .el-form-item {
+    margin-right: 55px !important;
+  }
+
+  .el-form-item__label {
+    //表单的小标头label
+    font-weight: $commonFont_weight !important;
+    font-size: 14px !important;
+    color: $commonFs_black_color !important;
+  }
+}
+
+.lx_table_has_children {
+  //统一的table多级表头的样式
+  border-bottom: 1px solid $commomBorder_color !important;
+}
+
+// 统一写的table(带表单功能)
+.common_table_set {
+  .el-input__inner {
+    // width: 60px!important;
+    height: 22px !important;
+  }
+}
+
+.el-table {
+  //table表单
+  font-size: 12px !important;
+  font-weight: $commonFont_weight !important;
+  border: 1px solid $commomBorder_color !important;
+  // border-top: 1.5px solid $commomBorder_color !important;
+  // border-left: 2px solid $commomBorder_color !important;
+
+  th {
+    padding: 6px 0 !important;
+  }
+
+  .cell {
+    line-height: 18px !important;
+  }
+
+  thead.is-group th {
+    background: none !important;
+    background: $commonTable_header_color !important;
+  }
+
+  .el-table__header-wrapper {
+    thead {
+      th {
+        background: none !important;
+        background: $commonTable_header_color !important;
+      }
+
+    }
+
+  }
+
+  .el-table__row {
+    background: none !important;
+    background: $commonTable_row_color !important;
+
+    td {
+      padding: 6px 0 !important;
+
+    }
+  }
+}
+
+// 资费调整页面的textarea
+// .el-form-item__content {
+//   .lx_reason_inp {
+//     width: 90% !important;
+//   }
+
+// }
