@@ -7,15 +7,8 @@ $commonFs_color:#85888E; //字体的颜色，灰色
 $commonFs_black_color:#303133; //字体的颜色，黑色
 $commonFs_red_color:#F56C6C; //字体颜色 微红
 
-
-@mixin lx_new_common_font_size {
-  //统一的字体样式调整
-  font-size: 14px !important;
-  font-weight: 400 !important;
-  color: $commonFs_black_color !important;
-}
-
-.el-form-item__content div:first-child{
+// elementUi的调整
+.el-form-item__content div:first-child {
   //form表单选项的宽度
   width: 220px;
 
@@ -90,10 +83,24 @@ $commonFs_red_color:#F56C6C; //字体颜色 微红
   }
 }
 
-// 资费调整页面的textarea
-// .el-form-item__content {
-//   .lx_reason_inp {
-//     width: 90% !important;
-//   }
+// elementUi的调整 end
 
-// }
+// ------------------资费页面的公用css------------------
+
+@mixin lx_new_common_font_size {
+  //统一的字体样式调整
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: $commonFs_black_color !important;
+}
+
+// 上方申请信息的表单的css
+.lx_for_info_row {
+  border: 1px solid $commomBorder_color;
+  border-right: none;
+  font-weight: 400;
+  font-size: 12px;
+  color: $commonFs_color;
+}
+
+// ------------------资费页面的公用css end------------------

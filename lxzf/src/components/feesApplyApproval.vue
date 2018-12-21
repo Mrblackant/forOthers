@@ -222,12 +222,7 @@ export default {
     background-color: $commonTable_header_color;
 
     .lx_for_info_row {
-      border: 2px solid $commomBorder_color;
-      border-right: none;
-      font-weight: 400;
-      font-size: 12px;
-      color: $commonFs_color;
-      ;
+     
 
       .lx_info_col {
         padding: 9px 0;
